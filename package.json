@@ -4,7 +4,7 @@
   "description": "API REST em Node.js para a plataforma fictícia UniFECAF Flix. Exponde um catálogo de filmes armazenado em MySQL, seguindo arquitetura MVC e padrão REST. Possui endpoints para listar todos os filmes, buscar por ID e filtrar por nome/sinopse, com código organizado, tratamento de erros e uso correto de status HTTP.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,18 @@
   },
   "homepage": "https://github.com/Devan-M/unifecaf-flix-api#readme",
   "dependencies": {
-    "@prisma/client": "^7.8.0",
+    "@prisma/adapter-mariadb": "^7.8.0",
+    "@prisma/client": "^6.19.3",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "prisma": "^6.19.3"
   },
   "devDependencies": {
-    "prisma": "^7.8.0"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.3"
   }
 }
