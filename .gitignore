@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente (senha do banco, etc.)
+.env
+
+# Prisma
+prisma.config.ts
+src/generated/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
